@@ -8,58 +8,62 @@
         <script defer src="script.js"></script>
     </head>
     <body>
-        <form action="/" method="GET">
-            <div>
-                <input
-                    autocomplete="off"
-                    id="email"
-                    name="email"
-                    type="text"
-                    placeholder="EMAIL"
-                    required
-                />
-            </div>
-            <div>
-                <input
-                    autocomplete="off"
-                    id="country"
-                    name="country"
-                    type="text"
-                    placeholder="COUNTRY"
-                    required
-                />
-            </div>
-            <div>
-                <input
-                    autocomplete="off"
-                    id="zip"
-                    name="zip"
-                    placeholder="ZIP CODE"
-                    required
-                />
-            </div>
-            <div>
-                <input
-                    autocomplete="off"
-                    id="password"
-                    name="password"
-                    type="text"
-                    placeholder="PASSWORD"
-                    required
-                />
-            </div>
-            <div>
-                <input
-                    autocomplete="off"
-                    id="confirm"
-                    name="confirm"
-                    type="text"
-                    placeholder="CONFIRM PASSWORD"
-                    required
-                />
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        <div id="form-block">
+            <form action="/" method="GET">
+                <h1 id="title">Sign Up Form</h1>
+                <div>
+                    <input
+                        autocomplete="off"
+                        id="email"
+                        name="email"
+                        type="text"
+                        placeholder="EMAIL"
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        autocomplete="off"
+                        id="country"
+                        name="country"
+                        type="text"
+                        placeholder="COUNTRY"
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        autocomplete="off"
+                        id="zip"
+                        name="zip"
+                        placeholder="ZIP CODE"
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        autocomplete="off"
+                        id="password"
+                        name="password"
+                        type="text"
+                        placeholder="PASSWORD"
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        autocomplete="off"
+                        id="confirm"
+                        name="confirm"
+                        type="text"
+                        placeholder="CONFIRM PASSWORD"
+                        required
+                    />
+                </div>
+                <h4>Sign up now for all our great offers!</h4>
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
 
         <div id="error"></div>
     </body>

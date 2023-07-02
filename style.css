@@ -1,0 +1,112 @@
+/* VARIABLES DECLARATION ON ROOT */
+
+:root {
+    --background-light: rgba(0, 0, 0, 0.6);
+    --background-dark: rgba(0, 0, 0, 0.7);
+    --light: #ebebeb;
+    --pink: #e86fba;
+    --solid-dark: #121212;
+}
+
+/* COMMON STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    overflow: auto;
+    background: url(images/candy.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTENT */
+#title {
+    color: var(--light);
+    margin-bottom: 50px;
+    font-size: 45px;
+}
+
+#form-block {
+    margin: 0;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background-dark);
+    height: 525px;
+    width: 418px;
+    border-radius: 6px;
+    animation: fadeIn 1.5s;
+}
+
+input {
+    padding: 0.5em;
+    border: solid 1px #999;
+    border-radius: 3px;
+    max-width: 350px;
+    min-width: 350px;
+    max-height: 35px;
+    min-height: 35px;
+    background-color: var(--background-dark);
+    margin-bottom: 30px;
+    color: var(--light);
+}
+
+input:hover {
+    box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
+    background-color: #fffcf7;
+}
+input:focus {
+    box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
+    background-color: #fffcf7;
+}
+h4 {
+    color: var(--light);
+    padding: 10px;
+}
+
+button {
+    height: 45px;
+    width: 450px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 800;
+    background-color: var(--solid-dark);
+    color: var(--light);
+}
+
+button:hover {
+    background-color: var(--pink);
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media queries */
