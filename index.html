@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <form action="/" method="GET">
+            <div>
+                <input
+                    autocomplete="off"
+                    id="email"
+                    name="email"
+                    type="text"
+                    placeholder="EMAIL"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    autocomplete="off"
+                    id="country"
+                    name="country"
+                    type="text"
+                    placeholder="COUNTRY"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    autocomplete="off"
+                    id="zip"
+                    name="zip"
+                    placeholder="ZIP CODE"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    autocomplete="off"
+                    id="password"
+                    name="password"
+                    type="text"
+                    placeholder="PASSWORD"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    autocomplete="off"
+                    id="confirm"
+                    name="confirm"
+                    type="text"
+                    placeholder="CONFIRM PASSWORD"
+                    required
+                />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="error"></div>
+    </body>
+</html>
