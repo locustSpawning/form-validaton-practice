@@ -81,6 +81,13 @@ input:focus {
     background-color: #fffcf7;
     color: black;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 h4 {
     color: var(--light);
     padding: 10px;
@@ -102,6 +109,7 @@ button:hover {
 }
 
 #error {
+    display: none;
     color: var(--solid-dark);
     font-weight: 600;
     margin-top: 25px;
