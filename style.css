@@ -6,6 +6,8 @@
     --light: #ebebeb;
     --pink: #e86fba;
     --solid-dark: #121212;
+    --color-invalid: #ff54ad;
+    --color-valid: #54ffc0;
 }
 
 /* COMMON STYLING */
@@ -29,12 +31,13 @@ body {
     background: url(images/candy.jpg);
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 /* MAIN CONTENT */
-#title {
+.title {
     color: var(--light);
     margin-bottom: 50px;
     font-size: 45px;
@@ -96,6 +99,26 @@ button {
 
 button:hover {
     background-color: var(--pink);
+}
+
+#error {
+    color: var(--solid-dark);
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+/* VALIDATION */
+
+input:not(:focus):invalid {
+    border-color: var(--color-invalid);
+}
+
+input:not(:focus):invalid ~ #error-message {
+    display: block;
+}
+
+input:not(:focus):valid {
+    border-color: var(--color-valid);
 }
 
 /* Animations */

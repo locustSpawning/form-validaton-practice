@@ -32,4 +32,11 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         errorElement.innerText = messages.join(', ');
     }
+    if (messages.length == 0) {
+        highFive();
+    }
 });
+
+function highFive() {
+    alert('*✋* High Five! You did it!');
+}

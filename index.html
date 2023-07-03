@@ -13,16 +13,16 @@
         <script defer src="script.js"></script>
     </head>
     <body>
-        <div id="error"></div>
+        <div id="error-message"></div>
         <div id="form-block">
             <form id="form">
-                <h1 id="title">Sign Up Form</h1>
+                <h1 class="title">Sign Up Form</h1>
                 <div>
                     <input
                         autocomplete="off"
                         id="email"
                         name="email"
-                        type="text"
+                        type="email"
                         placeholder="EMAIL"
                         required
                     />
@@ -42,6 +42,7 @@
                         autocomplete="off"
                         id="zip"
                         name="zip"
+                        type="number"
                         placeholder="ZIP CODE"
                         required
                     />
@@ -51,7 +52,7 @@
                         autocomplete="off"
                         id="password"
                         name="password"
-                        type="text"
+                        type="password"
                         placeholder="PASSWORD"
                         required
                     />
@@ -61,7 +62,7 @@
                         autocomplete="off"
                         id="confirm"
                         name="confirm"
-                        type="text"
+                        type="password"
                         placeholder="CONFIRM PASSWORD"
                         required
                     />
@@ -70,7 +71,6 @@
                 <button type="submit">Sign up</button>
             </form>
         </div>
-
         <div id="error"></div>
     </body>
 </html>
